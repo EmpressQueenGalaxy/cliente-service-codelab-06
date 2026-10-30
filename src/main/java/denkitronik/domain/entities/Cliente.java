@@ -19,8 +19,8 @@ public class Cliente {
     private Long id;
 
     @NotEmpty(message = "El nombre no puede estar vacío")
-    @Size(min = 2, max = 20, message = "El nombre debe tener entre 2 y 20 caracteres")
-    @Column(nullable = false)
+    @Size(min = 2, max = 50, message = "El nombre debe tener entre 2 y 50 caracteres")
+    @Column(nullable = false, length = 50)
     private String nombre;
 
     @NotEmpty(message = "El apellido no puede estar vacío")
