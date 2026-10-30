@@ -37,7 +37,6 @@ public class Cliente {
 
     private String foto;
 
-    @NotNull(message = "La región es obligatoria")
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
